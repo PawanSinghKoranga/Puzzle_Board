@@ -1,0 +1,9 @@
+// first go to .bashrc file 
+nano ~/.bashrc
+
+// then in the bashrc file add these 2 lines at end
+export NODEJS_HOME=/home/animesh/Desktop/project/node-v18.12.0-linux-x64
+export PATH=$PATH:$NODEJS_HOME/bin
+
+// then run the below command
+source ~/.bashrc

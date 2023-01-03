@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="admin-style.css">
+</head>
+
+<body>
+    <!-- <form onsubmit="callvalue()"> -->
+    <h1>Cross Board Input</h1>
+    <div class="wrapper">
+        <div id="survey_options">
+            <!-- <input type="text" name="survey_options[]" class="survey_options" size="50" placeholder="Name">
+            <input type="text" name="survey_options[]" class="survey_options" size="50" placeholder="Email"> -->
+            <input type="text" id="rows" placeholder="Enter no of rows" size="50">
+            <input type="text" id="cols" placeholder="Enter no of columns" size="50">
+            <button id ="make">generate table</button>
+            <table border="1" id="tab" bgcolor="black">
+                <!-- <td class="table_inside"></td> -->
+            <!-- <td></td> -->
+            </table>
+            
+            <!-- <input type="text" name="survey_options[]" class="survey_options" size="50" placeholder="Name">
+            <input type="text" name="survey_options[]" class="survey_options" size="50" placeholder="Email"> -->
+            <input type="text" name="survey_options[]" class="survey_options" size="50" placeholder="choose starting point no from above crossboard" id="prev_entry">
+            <input type="text" name="survey_options[]" class="survey_options" size="50" placeholder="write 'a' for across and 'd' for down" id="prev_entry_dir">
+            <input type="text" name="survey_options[]" class="survey_options" size="50" placeholder="Write clue statement" id="prev_entry_clue">
+            <input type="text" name="survey_options[]" class="survey_options" size="50" placeholder="write the word" id="prev_entry_word">
+        </div>
+        <div class="controls">
+            <a href="#" id="add_more_fields"><i class="fa fa-plus"></i>Add More</a>
+            <a href="#" id="remove_fields"><i class="fa fa-plus"></i>Remove Field</a>
+            <a href="#" id="review"><i class="fa fa-plus"></i> review</a>
+            <a href="#" id="veri"><i class="fa fa-plus"></i> verify</a>
+            <button id ="finalsave">save_board</button>
+
+            <!-- <input type="submit" value="register"> -->
+        </div>
+    </div>
+    </form>
+
+<script src="admin-script.js"></script>
+</body>
+
+</html>
